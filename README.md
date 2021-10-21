@@ -1,7 +1,7 @@
 # Multiple layouts on the same window?
 Ever wanted to have a window that switches between multiple layouts, but couldn't find a way to apply this in pysimplegui? This class is a quick framework I made for this purpose.
 
-If you do not know what a class in python is, search online.
+There is an example file to get a taste of what it does.
 
 # How do I use this to create a window?
 To create a window, the function takes 2 parameters:
@@ -27,7 +27,7 @@ event, values = window.read()
 ```python
 window.e(KEY).update(PROPERTIES)
 ```
-.e(KEY).update(PROPERTIES) - This is how you update gui elements, read online about pysimplegui to learn more. (in a normal window you can do window[] instead of window.element(), but this is a class)
+.e(KEY) - replaces the normal window[]. (same as the window.element() function used in the class)
 
 ```python
 window.topage(INT)
@@ -43,6 +43,3 @@ CurrentPage = window.page()
 window.close()
 ```
 .close() - Closes the window.
-
-# Can I see an example?
-The python file contains an example, copy the file and run to try it out!
