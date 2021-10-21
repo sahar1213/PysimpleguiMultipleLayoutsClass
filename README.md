@@ -8,7 +8,9 @@ I couldn't find this anywhere else, so enjoy using it, and maybe return the favo
 There is an example python file, so you can run it to get a taste of what it does.
 
 # How do I use this to create a window?
-To create a window, the function takes 2 parameters:
+First, copy the class from the python file.
+
+To create a window, the class takes 2 parameters:
 
 ```python
 window = Window("Name Of The Program", [
