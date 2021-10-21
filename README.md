@@ -24,7 +24,8 @@ window = Window("Name Of The Program", [
 ```
 
 The name of the program, and layouts for each *'page'* of the window, which you can switch between. (you can enter as many layouts as you'd like)
-UpperLayout and LowerLayout are optional, they stay displayed no matter which page you switch to, above the columns and below respectively (look in the example file for an example of how this can be used)
+
+UpperLayout and LowerLayout are optional, they stay displayed no matter which page you switch to, above the columns and below respectively. (look in the example file for an example of how this can be used)
 
 ## How do I use the window object created from this class?
 There are some functions embedded in the class:
