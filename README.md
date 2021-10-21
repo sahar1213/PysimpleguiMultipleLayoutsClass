@@ -8,6 +8,7 @@ To create a window, the function takes 2 parameters:
 
 ```python
 window = Window("Name Of The Program", [
+  [LAYOUT1], 
   [LAYOUT2],
   [LAYOUT3]
 ])
