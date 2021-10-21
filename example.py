@@ -35,3 +35,44 @@ class Window:
     self.topage = SwitchPage
     self.page = GetPage
     self.close = window.close
+
+# Example of a program using this class
+
+window = Window("Example Program", [
+  [
+    [sg.Text('This is layout 1 - It is all Checkboxes')],
+    *[[sg.CB(f'Checkbox {i}')] for i in range(5)],
+  ],
+  
+  [
+    [sg.Text('This is layout 2')],
+    [sg.Input(key='-IN-')],
+    [sg.Input(key='-IN2-')],
+  ],
+
+  [
+    [sg.Text('This is layout 3 - It is all Radio Buttons')],
+    *[[sg.Radio(f'Radio {i}', 1)] for i in range(8)],
+  ]
+], [], [
+      sg.Button('1'),
+      sg.Button('2'),
+      sg.Button('3'),
+      sg.Button('Exit')
+])
+
+while True:
+    event, values = window.read() # read window
+    
+    if event == "Exit" or event == None: # stop program if user clicks exit or exits the program
+      break
+    else:
+      try:
+        layout = int(event) # try converting event to int (errors if its not int)
+      except:
+        print()
+      
+      if layout: # if its int
+        window.topage(layout - 1) # switch to page on button
+
+window.close()
