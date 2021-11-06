@@ -2,13 +2,6 @@
 ## Multiple layouts on the same window?
 Ever wanted to have a window that switches between multiple layouts, but couldn't find a way to apply this in pysimplegui? This class is a quick framework I made for this purpose.
 
-I am publishing this as an open source project as this automates the process of creating columns with different layouts, switching between them and getting the number of the current visible page.
-
-## Why did I upload this?
-I couldn't find this anywhere else, so enjoy using it, and maybe return the favour by helping others by uploading useful open source code.
-
-There is an example python file, so you can run it to get a taste of what it does.
-
 # Guide to use
 ## How do I use this to create a window?
 First, copy the class from the python file.
